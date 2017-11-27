@@ -1,8 +1,58 @@
+body{
+
+}
 header{
     font-family: Arial;
-    background-color: #466995;
-    border-bottom: 1px solid #466995;
-    position: fixed;
-    width: 100%;
-    z-index: 10;
+    max-width: 800px;
+}
+
+
+.navigation{
+    display: flex;
+    float: right;
+
+}
+
+.nav-page{
+    list-style-type: none;
+
+}
+.nav-link{
+    font-family: Arial;
+    font-size: 1.3em;
+    color: black;
+    text-decoration: none;
+}
+
+.cur{
+    border: solid thin steelblue;
+    border-radius: 5px;
+}
+
+.one-line{
+    padding: 3px;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-bottom: 15px;
+    border-bottom: solid thin steelblue;
+    max-width: 12px;
+}
+
+.one-line * {
+    display: inline;
+}
+
+.page-name{
+    font-family: Arial;
+    font-size: 2em;
+
+}
+
+p{
+    font-family: Arial;
+    font-size: 1em;
+    text-align: justify;
+}
+ul{
+    height: 1.75em;
 }
