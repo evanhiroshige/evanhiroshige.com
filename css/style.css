@@ -3,56 +3,42 @@ body{
 }
 header{
     font-family: Arial;
-    max-width: 800px;
-}
-
-
-.navigation{
-    display: flex;
-    float: right;
-
-}
-
-.nav-page{
-    list-style-type: none;
-
-}
-.nav-link{
-    font-family: Arial;
-    font-size: 1.3em;
-    color: black;
-    text-decoration: none;
-}
-
-.cur{
-    border: solid thin steelblue;
-    border-radius: 5px;
-}
-
-.one-line{
-    padding: 3px;
-    padding-left: 10%;
-    padding-right: 10%;
-    margin-bottom: 15px;
-    border-bottom: solid thin steelblue;
-    max-width: 12px;
-}
-
-.one-line * {
-    display: inline;
 }
 
 .page-name{
     font-family: Arial;
-    font-size: 2em;
-
+    font-size: 30px;
+    display: inline;
 }
 
 p{
     font-family: Arial;
-    font-size: 1em;
-    text-align: justify;
 }
+
+
 ul{
-    height: 1.75em;
+
+}
+
+.navigation{
+}
+
+.nav-page{
+    display: inline-block;
+    font-family: Arial;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+nav li {
+    display: inline-flex;
+}
+
+.about-me{
+    font-size: 15px;
+    display: flex;
+    flex-wrap: wrap;
+
 }
