@@ -10,20 +10,28 @@
     <style>
         /* Remove the navbar's default margin-bottom and rounded borders */
         .navbar {
-
+            overflow-x: hidden;
             margin-bottom: 0;
             border-radius: 0;
+            background-color: floralwhite;
+            border-color: floralwhite;
+            border-bottom-color: lightgray;
         }
 
-        .navbar-default {
-            background-color: floralwhite;
+
+        .nav-link:hover {
+            background-color: peachpuff;
         }
 
         .title {
             padding-left: 15px;
-            color: dimgray;
+            color: indianred;
             vertical-align: middle;
             line-height: 10px;
+        }
+
+        h1 {
+            color: indianred;
         }
 
         body {
@@ -31,42 +39,27 @@
             font-family: "Avenir", serif;
         }
 
-        /*!* Set height of the grid so .sidenav can be 100% (adjust as needed) *!*/
-        /*.row.content {*/
-        /*height: 450px*/
-        /*}*/
-
-        /* Set gray background color and 100% height */
-        .sidenav {
-            padding-top: 20px;
-            background-color: #f1f1f1;
-            height: 100%;
+        /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+        .row.content {
+            height: 450px
         }
 
         /* Set black background color, white text and some padding */
         footer {
-            background-color: #555;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 45px;
+            background-color: dimgray;
             color: white;
-            padding: 15px;
-        }
-
-        /* On small screens, set height to 'auto' for sidenav and grid */
-        @media screen and (max-width: 767px) {
-            .sidenav {
-                height: auto;
-                padding: 15px;
-            }
-
-            .row.content {
-                height: auto;
-            }
+            /*padding: 15px;*/
         }
     </style>
 </head>
 <body>
 
 <nav class="navbar navbar-default">
-    <div class="col-sm-2 sidenav-toggle" data-toggle="collapse">
+    <div class="col-sm-2 sidebar-toggle" data-toggle="collapse">
     </div>
     <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -81,10 +74,10 @@
 
     <div class="collapse navbar-collapse navbar-right" id="myNavbar">
         <ul class="nav navbar-nav">
-            <li class="active"><a href="./index.html">About Me</a></li>
-            <li><a href="CHANGE TO LINk">Projects</a></li>
-            <li><a href="CHANGE TO LINK">GitHub</a></li>
-            <li class="resume"><a style="font-weight: bold" href="./Evan_Hiroshige_Resume.pdf"
+            <li class="nav-link"><a href="./index.html">About Me</a></li>
+            <li class="nav-link"><a href="CHANGE TO LINk">Projects</a></li>
+            <li class="nav-link"><a href="CHANGE TO LINK">GitHub</a></li>
+            <li class="nav-link resume"><a href="./Evan_Hiroshige_Resume.pdf"
                                   target="_blank">Resume</a>
             </li>
         </ul>
@@ -98,19 +91,22 @@
         </div>
         <div class="col-sm-8 text-left">
             <h1>About Me</h1>
-            <p>
+            <p style="color: dimgray; font-size: larger">
                 My name is Evan Hiroshige. I am a rising sophomore at Northeastern University pursuing a Bachelor of
-                Science in computer science and mathematics.
+                Science in computer science and mathematics. Currently, I am a software engineering intern at . . .
             </p>
-            <hr>
-            <h3>Test</h3>
-            <p>Lorem ipsum...</p>
         </div>
         <div class="col-sm-2 sidenav-toggle" data-toggle="collapse">
         </div>
     </div>
+
 </div>
 
+<footer class="container-fluid text-center">
+    <button>
+
+    </button>
+</footer>
 
 </body>
 
