@@ -12,6 +12,7 @@
         body {
             background-color: #fffaf0;
             font-family: "Avenir", serif;
+            overflow: hidden;
         }
 
         .navbar {
@@ -23,6 +24,10 @@
             border-bottom-color: lightgray;
         }
 
+        .navbar-default {
+            background-color: floralwhite;
+        }
+
         .current-page {
             font-weight: bold;
         }
@@ -32,7 +37,7 @@
         }
 
         .nav-link:visited {
-            color:blue;
+            color: yellow;
         }
 
         .nav-link:hover {
@@ -40,7 +45,7 @@
         }
 
         .title {
-            padding-left: 15px;
+
             color: indianred;
             vertical-align: middle;
             line-height: 10px;
@@ -49,7 +54,6 @@
         h1 {
             color: indianred;
         }
-
 
         /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
         .row.content {
@@ -66,49 +70,61 @@
             color: white;
             /*padding: 15px;*/
         }
+
+        /* On small screens, set height to 'auto' for sidenav and grid */
+        @media screen and (max-width: 767px) {
+            .sidenav {
+                height: auto;
+                padding: 15px;
+            }
+            .row.content {height:auto;}
+        }
     </style>
 </head>
 <body>
-
-<nav class="navbar navbar-default">
-    <div class="col-sm-2 sidebar-toggle" data-toggle="collapse">
+<div class="navbar">
+    <div class="col-sm-1 sidenav-toggle" data-toggle="collapse">
     </div>
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </button>
-        <div class="navbar-left">
-            <h3 class="title">Evan Hiroshige</h3>
-        </div>
+    <div class="col-sm-10 text-left">
+        <nav class="navbar-default">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="navbar-left">
+                    <h3 class="title">Evan Hiroshige</h3>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="nav-link current-page"><a href="./index.html">About Me</a></li>
+                    <li class="nav-link"><a href="./projects.html">Projects</a></li>
+                    <li class="nav-link"><a href="https://github.com/evanhiroshige" target="_blank">GitHub</a></li>
+                    <li class="nav-link resume"><a href="./Evan_Hiroshige_Resume.pdf"
+                                                   target="_blank">Resume</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </div>
-
-    <div class="collapse navbar-collapse navbar-right" id="myNavbar">
-        <ul class="nav navbar-nav">
-            <li class="nav-link current-page"><a href="./index.html">About Me</a></li>
-            <li class="nav-link"><a href="./projects.html">Projects</a></li>
-            <li class="nav-link"><a href="https://github.com/evanhiroshige" target="_blank">GitHub</a></li>
-            <li class="nav-link resume"><a href="./Evan_Hiroshige_Resume.pdf"
-                                  target="_blank">Resume</a>
-            </li>
-        </ul>
+    <div class="col-sm-1 sidenav-toggle" data-toggle="collapse">
     </div>
-    </div>
-</nav>
+</div>
 
 <div class="container-fluid text-center">
     <div class="row content">
-        <div class="col-sm-2 sidenav-toggle" data-toggle="collapse">
+        <div class="col-sm-1 sidenav-toggle" data-toggle="collapse">
         </div>
-        <div class="col-sm-8 text-left">
+        <div class="col-sm-10 text-left">
             <h1>About Me</h1>
             <p style="color: dimgray; font-size: larger">
                 My name is Evan Hiroshige. I am a rising sophomore at Northeastern University pursuing a Bachelor of
-                Science in computer science and mathematics. Currently, I am a software engineering intern at . . .
+                Science in computer science and mathematics...
             </p>
         </div>
-        <div class="col-sm-2 sidenav-toggle" data-toggle="collapse">
+        <div class="col-sm-1 sidenav-toggle" data-toggle="collapse">
         </div>
     </div>
 
