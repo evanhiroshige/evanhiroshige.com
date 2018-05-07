@@ -3,37 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <title>Evan Hiroshige</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <script type="text/javascript">
-        function f() {
-            console.log("test");
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        /* Remove the navbar's default margin-bottom and rounded borders */
+        .navbar {
+
+            margin-bottom: 0;
+            border-radius: 0;
         }
 
-    </script>
-</head>
+        .navbar-default {
+            background-color: floralwhite;
+        }
 
+        .title {
+            padding-left: 15px;
+            color: dimgray;
+            vertical-align: middle;
+            line-height: 10px;
+        }
+
+        body {
+            background-color: #fffaf0;
+            font-family: "Avenir", serif;
+        }
+
+        /*!* Set height of the grid so .sidenav can be 100% (adjust as needed) *!*/
+        /*.row.content {*/
+        /*height: 450px*/
+        /*}*/
+
+        /* Set gray background color and 100% height */
+        .sidenav {
+            padding-top: 20px;
+            background-color: #f1f1f1;
+            height: 100%;
+        }
+
+        /* Set black background color, white text and some padding */
+        footer {
+            background-color: #555;
+            color: white;
+            padding: 15px;
+        }
+
+        /* On small screens, set height to 'auto' for sidenav and grid */
+        @media screen and (max-width: 767px) {
+            .sidenav {
+                height: auto;
+                padding: 15px;
+            }
+
+            .row.content {
+                height: auto;
+            }
+        }
+    </style>
+</head>
 <body>
 
-<div class="one-line">
-    <header>
-        <div>
-            <nav>
-                <ul class="navigation">
-                    <li class="page-name">Evan Hiroshige</li>
-                    <li class="nav-page"><a href="./index.html" class="nav-link cur">Home</a></li>
-                    <li class="nav-page"><a href="./gh.html" class="nav-link">GitHub </a></li>
-                    <li class="nav-page"><a href="./resume.pdf" class="nav-link">Resume </a></li>
-                </ul>
-                <script>f()</script>
-            </nav>
+<nav class="navbar navbar-default">
+    <div class="col-sm-2 sidenav-toggle" data-toggle="collapse">
+    </div>
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <div class="navbar-left">
+            <h3 class="title">Evan Hiroshige</h3>
         </div>
-    </header>
+    </div>
+
+    <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="./index.html">About Me</a></li>
+            <li><a href="CHANGE TO LINk">Projects</a></li>
+            <li><a href="CHANGE TO LINK">GitHub</a></li>
+            <li class="resume"><a style="font-weight: bold" href="./Evan_Hiroshige_Resume.pdf"
+                                  target="_blank">Resume</a>
+            </li>
+        </ul>
+    </div>
+    </div>
+</nav>
+
+<div class="container-fluid text-center">
+    <div class="row content">
+        <div class="col-sm-2 sidenav-toggle" data-toggle="collapse">
+        </div>
+        <div class="col-sm-8 text-left">
+            <h1>About Me</h1>
+            <p>
+                My name is Evan Hiroshige. I am a rising sophomore at Northeastern University pursuing a Bachelor of
+                Science in computer science and mathematics.
+            </p>
+            <hr>
+            <h3>Test</h3>
+            <p>Lorem ipsum...</p>
+        </div>
+        <div class="col-sm-2 sidenav-toggle" data-toggle="collapse">
+        </div>
+    </div>
 </div>
 
-<div class="intro">
-    <p class="about-me"> My name is Evan Hiroshige. I am a rising sophomore at Northeastern University pursuing a B.S.
-        in Mathematics and Computer Science. </p>
-</div>
 
 </body>
 
