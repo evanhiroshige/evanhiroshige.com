@@ -9,6 +9,11 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <style>
         /* Remove the navbar's default margin-bottom and rounded borders */
+        body {
+            background-color: #fffaf0;
+            font-family: "Avenir", serif;
+        }
+
         .navbar {
             overflow-x: hidden;
             margin-bottom: 0;
@@ -18,6 +23,17 @@
             border-bottom-color: lightgray;
         }
 
+        .current-page {
+            font-weight: bold;
+        }
+
+        .nav-link {
+            transition: text-shadow .2s ease;
+        }
+
+        .nav-link:visited {
+            color:blue;
+        }
 
         .nav-link:hover {
             background-color: peachpuff;
@@ -34,10 +50,6 @@
             color: indianred;
         }
 
-        body {
-            background-color: #fffaf0;
-            font-family: "Avenir", serif;
-        }
 
         /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
         .row.content {
@@ -74,9 +86,9 @@
 
     <div class="collapse navbar-collapse navbar-right" id="myNavbar">
         <ul class="nav navbar-nav">
-            <li class="nav-link"><a href="./index.html">About Me</a></li>
+            <li class="nav-link current-page"><a href="./index.html">About Me</a></li>
             <li class="nav-link"><a href="CHANGE TO LINk">Projects</a></li>
-            <li class="nav-link"><a href="CHANGE TO LINK">GitHub</a></li>
+            <li class="nav-link"><a href="https://github.com/evanhiroshige" target="_blank">GitHub</a></li>
             <li class="nav-link resume"><a href="./Evan_Hiroshige_Resume.pdf"
                                   target="_blank">Resume</a>
             </li>
